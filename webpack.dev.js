@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development',
   devtool: 'source-map',
   stats: 'verbose',
-  module: {
+  module: {    
     rules: [
       {
         test: /\.js$/,
