@@ -1,0 +1,36 @@
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #eee;
+  font-size: 2em;
+  margin: 20px 10px 15px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 15px;
+  align-self: center;
+}
+
+p {
+  margin: 0;
+  padding: 15px 2px 5px;
+}
+
+body {
+  background-color: #000;
+  color: #222;
+  font: 14px/1.8 Verdana, sans-serif;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+main {
+ background-color: rgb(48, 41, 200);
+}

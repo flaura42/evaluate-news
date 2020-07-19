@@ -1,0 +1,49 @@
+.invisible {
+  display: none;
+}
+
+.results-section {
+  padding: 15px;
+}
+
+.temp-text {
+  color: #eee;
+  margin: 10px;
+}
+
+.results-div {
+
+}
+
+.article-div {
+  background-color: rgb(181, 218, 255);
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 5px;
+  padding: 10px;
+}
+
+.details-div {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px;
+}
+
+.article-link {
+
+}
+
+.article-date {
+
+}
+
+.source-link {
+
+}
+
+a {
+  padding: 2px;
+}

@@ -1,0 +1,10 @@
+footer {
+  background-color: rgb(48, 41, 200);
+}
+
+.copy {
+  color: #ddd;
+  margin: 0;
+  padding: 30px 0 10px;
+  text-align: center;
+}
