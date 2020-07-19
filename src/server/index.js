@@ -41,16 +41,7 @@ app.post('/aylien', async(req, res) => {
     }).then(r => {
       const dataSet = r.data.stories;
       const info = dataSet.map(data => {
-        return [
-          // data.author.name,
-          data.links.permalink,
-          data.published_at,
-          data.source.name,
-          data.source.home_page_url,
-          data.title
-          // data.body
-        ]
-        // return data.title
+        return data
       })
       console.log(info);
       res.send(info);
