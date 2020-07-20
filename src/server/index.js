@@ -3,8 +3,8 @@ const path = require('path')
 
 const express = require('express')
 const app = express()
-// app.use(express.static('dist'))
-app.use(express.static('src/client'))
+app.use(express.static('dist'))
+// app.use(express.static('src/client'))
 
 
 const dotenv = require('dotenv')
@@ -23,8 +23,8 @@ app.listen(port, () => {
 })
 
 app.get('/', (req, res) => {
-    // res.send('dist/index.html')
-    res.send(path.resolve('src/client/views/index.html'))
+    res.send('dist/index.html')
+    // res.send(path.resolve('src/client/views/index.html'))
 })
 
 const axios = require('axios');
