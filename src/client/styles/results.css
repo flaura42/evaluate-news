@@ -11,10 +11,6 @@
   margin: 10px;
 }
 
-.results-div {
-
-}
-
 .article-div {
   background-color: rgb(181, 218, 255);
   border: 1px solid #000;
@@ -38,12 +34,4 @@
 .article-link {
   font-size: 1.3em;
   margin: 0 15px 15px;
-}
-
-.article-date {
-
-}
-
-.source-link {
-
 }
