@@ -28,19 +28,23 @@ const loadResults = (results) => {
     // pLink.setAttribute('target', '_blank')
     sLink.innerText = result.source.name
     dDiv.appendChild(sLink)
+    div.appendChild(dDiv)
+
+    const bDiv = document.createElement('div')
+    bDiv.className = 'body-div'
+
+    const h3 = document.createElement('h3')
+    h3.className = 'article-title'
+    h3.innerText = result.title
+    bDiv.appendChild(h3)
 
     const pLink = document.createElement('a')
     pLink.className = 'article-link'
     pLink.href = result.links.permalink
     // pLink.setAttribute('target', '_blank')
     pLink.innerText = 'See Full Article'
-    dDiv.appendChild(pLink)
-    div.appendChild(dDiv)
-
-    const h3 = document.createElement('h3')
-    h3.className = 'article-title'
-    h3.innerText = result.title
-    div.appendChild(h3)
+    bDiv.appendChild(pLink)
+    div.appendChild(bDiv)
 
     fragment.appendChild(div)
   })

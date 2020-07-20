@@ -19,21 +19,25 @@
   background-color: rgb(181, 218, 255);
   border: 1px solid #000;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
   margin: 10px 5px;
   padding: 10px;
 }
 
 .details-div {
   display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.body-div {
+  display: flex;
   flex-direction: column;
-  width: 200px;
-  padding: 10px;
 }
 
 .article-link {
-
+  font-size: 1.3em;
+  margin: 0 15px 15px;
 }
 
 .article-date {
@@ -42,8 +46,4 @@
 
 .source-link {
 
-}
-
-a {
-  padding: 2px;
 }
