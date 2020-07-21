@@ -9,19 +9,28 @@
 * Using APIs
 * NLP
 
-Unfortunately, due to Aylien no longer supporting the Text API, I had to use the News API and instead have changed the project to 'Fetch News'.
+Unfortunately, due to Aylien no longer supporting the Text API, I had to use the News API and instead have changed the project to 'Fetch News'. Although the News API has a field for sentiment, it comes through as `{ body: [Object], title: [Object] }`.
 
 User enters a search topic and the API returns a list of 10 news articles on the topic.  I added date, source, and full article links to make it easier.
 
 ** To run this project: **
-* Build development environment with `npm run build-dev`
-* Build production environment with `npm run build-prod`
+* Development Environment
+  Build with `npm run build-dev`.  Runs on http://localhost:8080/
+  Run server with `npm start`.  Runs on http://localhost:8081/
+
+* Production Environment
+  Build with `npm run build-prod`  
+  Run http server with `npm run start-p`  Runs on http://127.0.0.1:8080/
+  Run server with `npm start`.  Runs on http://localhost:8081/ (same as Dev)
+
 * Run tests with `npm test`
-* Start the server with `npm start` and go to http://localhost:8080
+
 
 ** Made with the lovely help from: **
-https://www.w3schools.com/default.asp
-https://developer.mozilla.org/en-US/
-https://css-tricks.com/
-https://stackoverflow.com/
-and fellow student Derek T who figured out how to use the News API!
+* [CSS Tricks](https://css-tricks.com/)
+* [Google Developers](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
+* [MDN Web Docs](https://developer.mozilla.org/en-US/)
+* [Stack Overflow](https://stackoverflow.com/)
+* [w3schools](https://www.w3schools.com/default.asp)
+* [Webpack](https://webpack.js.org/)
+* and fellow student Derek T who figured out how to use the News API!
