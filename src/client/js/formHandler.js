@@ -25,7 +25,7 @@ async function handleSubmit(title) {
     console.log("Returned", respData.length);
 
     if (respData.length === 0) {
-      resultsDiv.innerHTML = `<p class="temp-text">Terribly sorry!  No results returned.  Please try again</p>`;
+      resultsDiv.innerHTML = `<p class="temp-text">Terribly sorry!  No results returned.  Please try again!</p>`;
     } else {
       Client.loadResults(respData);
     }

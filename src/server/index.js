@@ -1,5 +1,4 @@
 const path = require('path')
-// const aylien = require('aylien_textapi')
 
 const express = require('express')
 const app = express()
