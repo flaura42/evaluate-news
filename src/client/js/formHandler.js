@@ -1,3 +1,5 @@
+const port = 8081
+
 const submitForm = document.getElementById('submit-form');
 submitForm.addEventListener('click', (e) => {
   e.preventDefault()
@@ -11,7 +13,7 @@ async function handleSubmit(title) {
     const data = encodeURIComponent(title)
     const resultsDiv = document.getElementById('results-div');
     resultsDiv.innerHTML = `<p class='temp-text'>Collecting Data...</p>`;
-    const response = await fetch('http://localhost:8080/aylien', {
+    const response = await fetch(`http://localhost:${port}/aylien`, {
       method: 'POST',
       credentials: 'same-origin',
       headers: {

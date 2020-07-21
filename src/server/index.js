@@ -3,28 +3,29 @@ const path = require('path')
 
 const express = require('express')
 const app = express()
-app.use(express.static('dist'))
-// app.use(express.static('src/client'))
+// app.use(express.static('dist'))
+app.use(express.static('src/client'))
 
-
-const dotenv = require('dotenv')
-dotenv.config()
-
-const cors = require('cors')
-app.use(cors())
 
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-const port = 8080
+const cors = require('cors')
+app.use(cors())
+
+const dotenv = require('dotenv').config()
+
+const fetch = require('node-fetch')
+
+const port = 8081
 app.listen(port, () => {
     console.log(`Running on localhost: ${port}`)
 })
 
 app.get('/', (req, res) => {
-    res.send('dist/index.html')
-    // res.send(path.resolve('src/client/views/index.html'))
+    // res.sendFile('dist/index.html')
+    res.send(path.resolve('src/client/views/index.html'))
 })
 
 const axios = require('axios');
