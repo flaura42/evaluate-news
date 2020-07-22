@@ -16,14 +16,13 @@ User enters a search topic and the API returns a list of 10 news articles on the
 ** To run this project: **
 * Development Environment
   Build with `npm run build-dev`.  Runs on http://localhost:8080/
-  Run server with `npm start`.  Runs on http://localhost:8081/
 
 * Production Environment
-  Build with `npm run build-prod`  
-  Run http server with `npm run start-p`  Runs on http://127.0.0.1:8080/
-  Run server with `npm start`.  Runs on http://localhost:8081/ (same as Dev)
+  Build with `npm run build-prod`.  Runs on http://localhost:8081/
 
-* Run tests with `npm test`
+* Run server with `npm start`.
+
+* Run tests with `npm test`.
 
 
 ** Made with the lovely help from: **

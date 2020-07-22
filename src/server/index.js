@@ -43,7 +43,6 @@ app.post('/aylien', async(req, res) => {
       const info = dataSet.map(data => {
         return data
       })
-      console.log(info);
       res.send(info);
     });
   } catch(e) {
